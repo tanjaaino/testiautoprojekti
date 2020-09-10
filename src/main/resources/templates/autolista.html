@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.Thymeleaf.org">
+<head>
+<title>Autot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Autot</h1>
+	<table>
+		<tr>
+			<th>Merkki</th>
+			<th>Valmistusvuosi</th>
+		</tr>
+		<tr th:each="auto : ${autot}">
+		<td th:text="${auto.merkki}">Merkki</td> <!--/*  lyhennysmerkintä metodikutsulle ${auto.getMerkki()}  */-->
+		<td th:text="${auto.valmistusvuosi}">Valmistusvuosi</td> 
+		</tr>
+		
+	</table>
+</body>
+</html>
