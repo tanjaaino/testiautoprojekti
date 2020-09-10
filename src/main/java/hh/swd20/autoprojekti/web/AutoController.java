@@ -19,8 +19,8 @@ public class AutoController {
 	public String getAutot(Model model) {
 		// ei haeta vielä tietokannasta autoja
 		List<Auto> autot = new ArrayList<Auto>();// luodaan tyhjä lista
-		autot.add(new Auto("Tesla", 2016));
-		autot.add(new Auto("Saab", 1986));
+		autot.add(new Auto("Tesla", 2016));  // lisätään 1. auto
+		autot.add(new Auto("Saab", 1986));  // lisätään 2.auto
 		System.out.println(autot);
 		// lisätään autolista model-olion mappiin avainarvolla templatea varten
 		model.addAttribute("autot", autot); //1. "keyword" for map, 2. dataobject
